@@ -24,9 +24,39 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+.content {
+  display: flex;
+  gap: 2rem;
+}
+
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.form-checkbox-control {
+  margin: 1.5rem 0;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  gap: 1rem;
 }
 
 .subtext {
@@ -36,6 +66,9 @@ form {
 
 #sign-in,
 #sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   width: 100%;
 }
 
@@ -48,8 +81,12 @@ label {
   font-weight: bold;
 }
 
-input {
-  width: 100%;
+.form-radio-control label {
+  font-weight: normal;
+}
+
+input,
+select {
   height: 30px;
   padding: 5px;
 }
